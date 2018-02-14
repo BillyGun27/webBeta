@@ -10,3 +10,13 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+<div>
+  {% for page in site.pages %}
+  
+
+      <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+   
+  {% endfor %}
+
+</div>
