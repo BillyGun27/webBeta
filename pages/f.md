@@ -1,7 +1,7 @@
 ---
 layout: page
-title: tri
-permalink: tri
+title: f
+permalink: f
 ---
 
 Some information about you!
