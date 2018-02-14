@@ -1,7 +1,6 @@
 ---
 layout: page
 title: f
-permalink: f
 ---
 
 Some information about you!
