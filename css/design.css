@@ -1,0 +1,95 @@
+* { padding: 0; margin: 0; }
+html,body,  .jumbo{
+  min-height: 90% !important;
+  height: 100%;
+ background: #EFEFEF;
+}
+.main {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
+.jumbo{
+  height: 90%;
+}
+/*
+.navhead{
+    background: crimson;
+    width:100%;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}*/
+.nav-design{
+    background: crimson;
+}
+
+nav{
+  background: #B80000;
+}
+.quad-circle{
+  background: #B80000;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 10px solid white; 
+  border-bottom: 10px solid #8B0000; 
+  border-bottom-right-radius : 100px;
+}
+.quad-circle a{
+  color: white;
+  font-weight: bold;
+}
+.capsule{
+  margin-top: 10px;
+  background: white;
+  border: black 1px solid;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+ 
+}
+.capsule:hover {
+  top: -2px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.capsule-head , .capsule{
+  border: transparent 1px solid;
+  border-top-right-radius: 50px;
+  
+}
+
+.capsule-content, .capsule{
+  border: ghostwhite 2px solid;
+  border-bottom-left-radius: 20px;
+}
+.capsule-content{
+  padding: 10px;
+}
+
+.capsule-footer{
+  border-top: gainsboro 1px solid;
+}
+.side-title{
+  padding:  5px;
+  text-align: center;
+  color: #B80000;
+  border-top: solid 2px rgb(184, 184, 184);
+  border-bottom : solid 2px rgb(184, 184, 184);
+}
+.chip{
+  background: #B80000;
+}
+.chip a{
+  color: white;
+}
+#title{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding: 10px;
+  background: #B80000;
+}
+
+
