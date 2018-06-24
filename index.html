@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<main>
 
 <div class="jumbo carousel carousel-slider center " data-indicators="true">
   <div class="carousel-fixed-item center">
@@ -43,8 +42,8 @@ layout: default
 
 </div>-->
 
-<div class="row core">
-  <div class="col l9 m9 s10 offset-s2">
+<div class="row container">
+  <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
       {% for post in site.posts %}
         {% if forloop.index == 0 %}
         <div class="col s10 m6 l8 " ><div class="capsule">
@@ -53,7 +52,7 @@ layout: default
             </div>
             <div class="capsule-content">
                 <h4>{{ post.title }}</h4>
-                <p>lorem ipsum bla bla</p>
+                <p>lorem ipsum bla bla {{forloop.index}}</p>
 
                 <div class="capsule-footer">
                       by it's me mario
@@ -71,7 +70,7 @@ layout: default
               </div>
               <div class="capsule-content">
                   <h4>{{ post.title }}</h4>
-                  <p>lorem ipsum bla bla</p>
+                  <p>lorem ipsum bla bla {{forloop.index}}</p>
 
                   <div class="capsule-footer">
                         by it's me mario
@@ -86,7 +85,7 @@ layout: default
         {% endfor %}
 </div>
 
-  <div class="col l3 m3  s10">
+  <div class="col l2 m2   s10">
     <h5 class="side-title">TAGS</h5>
       <div class="chip"><a href="#">App</a></div>
        <div class="chip"><a href="#">Web</a></div>
@@ -98,5 +97,5 @@ layout: default
 
 
 
-</main>
+
 
