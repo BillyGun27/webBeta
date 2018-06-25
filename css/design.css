@@ -3,6 +3,7 @@ html,body,  .jumbo{
   min-height: 90% !important;
   height: 100%;
  background: #EFEFEF;
+ font-family: 'Titillium Web', sans-serif;
 }
 .main {
     margin-top: 50px; /* Add a top margin to avoid content overlay */
@@ -67,11 +68,13 @@ nav{
 .capsule-content{
   padding: 10px;
 }
-
+.capsule-content h4{
+  color: #8B0000;
+}
 .capsule-footer{
+  padding-top: 5px;
+  color: #8B0000;
   border-top: gainsboro 1px solid;
-  padding-top:5px;
-  margin-top:5px;
 }
 .side-title{
   padding:  5px;
@@ -88,20 +91,17 @@ nav{
 }
 #title{
   position: absolute;
-  bottom: 8px;
+  bottom: 70px;
   left: 16px;
   padding: 10px;
-  background: #B80000;
+  background: rgba(184, 0, 0, 0.726);
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #B80000;
+#tag{
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
+  padding: 10px;
+  background: rgba(184, 0, 0, 0.726);
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
