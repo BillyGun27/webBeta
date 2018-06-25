@@ -1,14 +1,14 @@
 * { padding: 0; margin: 0; }
-html,body,  .jumbo{
+html,body, .main .jumbo{
   min-height: 90% !important;
   height: 100%;
  background: #EFEFEF;
  font-family: 'Titillium Web', sans-serif;
 }
-.main {
-    margin-top: 50px; /* Add a top margin to avoid content overlay */
-}
 
+.main{
+  height: 90%;
+}
 .jumbo{
   height: 90%;
 }
