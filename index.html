@@ -41,7 +41,7 @@ layout: default
   {% endfor %}
 
 </div>-->
-
+<br>
 <div class="row">
   <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
       {% for post in site.posts %}
@@ -59,7 +59,7 @@ layout: default
                       by it's me mario
                       <span class="right"> {{ post.tag }}</span>
                   <br>
-                     {{ post.date }}
+                  {{ page.date | date: "%B %e, %Y" }}
                 </div>
 
             </div>
@@ -78,7 +78,7 @@ layout: default
                       by it's me mario
                       <span class="right"> {{ post.tag }}</span>
                   <br>
-                    {{ post.date }}
+                  {{ page.date | date: "%B %e, %Y" }}
                   </div>
 
               </div>

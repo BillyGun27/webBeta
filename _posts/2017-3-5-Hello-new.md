@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Second
-date:   2014-3-5
 tag: app
 headline : config.png
 ---
