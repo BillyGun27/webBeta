@@ -4,9 +4,9 @@ layout: default
 
 
 <div class="jumbo carousel carousel-slider center " data-indicators="true">
-  <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-  </div>
+ <!--<div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>-->
   <a class="carousel-item red white-text" style="background:url('img/poster1.jpg') no-repeat center ; background-size:cover" href="#one!">
     <h1 id="title">First Panel</h1>
     <p class="white-text" id="tag">This is your first panel</p>
@@ -47,38 +47,38 @@ layout: default
       {% for post in site.posts %}
         {% if forloop.index == 1 %}
         <div class="col s10 m6 l8 " ><div class="capsule">
-            <div class="capsule-head" style="height:200px;background:url('img/poster2.jpg') no-repeat center ;background-size:cover;">
+            <div class="capsule-head" style="height:200px;background:url('images/poster2.jpg') no-repeat center ;background-size:cover;">
               
             </div>
             <div class="capsule-content">
-                <a class="black-text" href="#four!">
+                <a class="black-text" href="{{ site.baseurl }}{{ post.url }}">
                 <h4>{{ post.title }}</h4>
                 <p>lorem ipsum bla bla {{forloop.index}}</p>
                 </a>
                 <div class="capsule-footer">
                       by it's me mario
-                      <span class="right">Web</span>
+                      <span class="right"> {{ post.tag }}</span>
                   <br>
-                      25 December 2017
+                     {{ post.date }}
                 </div>
 
             </div>
         </div></div>
         {% else %}
           <div class="col s10 m6 l4 " ><div class="capsule">
-              <div class="capsule-head" style="height:200px;background:url('img/poster2.jpg') no-repeat center ;background-size:cover ;">
+              <div class="capsule-head" style="height:200px;background:url('images/poster2.jpg') no-repeat center ;background-size:cover ;">
             
               </div>
               <div class="capsule-content">
-                  <a class="black-text" href="#four!">
+                  <a class="black-text" href="{{ site.baseurl }}{{ post.url }}">
                   <h4>{{ post.title }}</h4>
                   <p>lorem ipsum bla bla {{forloop.index}}</p>
                   </a>
                   <div class="capsule-footer">
-                        by it's me mario
-                        <span class="right">Web</span>
-                    <br>
-                        25 December 2017
+                      by it's me mario
+                      <span class="right"> {{ post.tag }}</span>
+                  <br>
+                    {{ post.date }}
                   </div>
 
               </div>
