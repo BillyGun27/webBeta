@@ -1,5 +1,5 @@
 * { padding: 0; margin: 0; }
-html,body, .main .jumbo{
+html,body, .main .jumbo  {
   min-height: 90% !important;
   height: 100%;
  background: #EFEFEF;
@@ -9,9 +9,12 @@ html,body, .main .jumbo{
 .main{
   height: 90%;
 }
+/*
 .jumbo{
   height: 90%;
-}
+}*/
+
+
 /*
 .navhead{
     background: crimson;
@@ -72,7 +75,6 @@ nav{
   color: #8B0000;
 }
 .capsule-footer{
-  margin-top: 5px;
   padding-top: 5px;
   color: #8B0000;
   border-top: gainsboro 1px solid;
@@ -106,3 +108,24 @@ nav{
   background: rgba(184, 0, 0, 0.726);
 }
 
+.wrapper-footer {
+  background: #f5b335;
+  position: fixed;
+  bottom: 0;
+  transition: bottom 0.2s ease-in-out;
+  width: 100%;
+
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #B80000;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nav-down {
+  bottom: -100px;
+}
