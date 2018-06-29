@@ -1,0 +1,19 @@
+---
+layout: page
+title: Gallery
+permalink: gallery
+headline: gallery/fadepx.jpg
+---
+
+
+<div class="row"></div>
+{% for image in site.static_files %}
+    {% if image.path contains 'images/gallery' %}
+    <div class="col s10 m6 l4" >
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /> 
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+
+{% include photoswipe.html %}

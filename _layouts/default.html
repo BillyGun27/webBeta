@@ -19,7 +19,10 @@
     <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/design.css">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+     <!--Import jQuery before materialize.js-->
+     <script  type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
+     <script type="text/javascript" src="{{ site.baseurl }}/js/materialize.min.js"></script>
+     
   </head>
 
   <body>
@@ -76,10 +79,7 @@
       </div>
     </div>
 
-           <!--Import jQuery before materialize.js-->
-           <script  type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
-           <script type="text/javascript" src="{{ site.baseurl }}/js/materialize.min.js"></script>
-           
+          
            <script>
             $('.carousel.carousel-slider').carousel({fullWidth: true});
              // Initialize collapse button
