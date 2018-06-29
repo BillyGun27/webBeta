@@ -79,7 +79,10 @@
       </div>
     </div>
 
- 
+    {% if page.photoswipe %}
+      {% include photoswipe.html %}
+    {% endif %}
+
            <script>
             $('.carousel.carousel-slider').carousel({fullWidth: true});
              // Initialize collapse button
