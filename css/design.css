@@ -109,6 +109,8 @@ nav{
   background: rgba(184, 0, 0, 0.726);
 }
 
+/*footer*/
+
 .wrapper-footer {
   background: #f5b335;
   position: fixed;
@@ -130,3 +132,20 @@ footer {
 .nav-down {
   bottom: -100px;
 }
+
+/**/
+/*gallery*/
+
+.gallery .gallery-entry figure.article-gallery-img {
+  margin-left: 0;
+  margin-right: 0;
+}
+.gallery .gallery-entry figure.article-gallery-img a {
+  display: inline-block;
+}
+.gallery img {
+  max-width: 100%;
+}
+
+
+/**/
