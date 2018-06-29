@@ -2,7 +2,60 @@
 layout: page
 title: Tutorial
 permalink: tutorial
-headline: gallery/woman.jpg
+headline: tutorial/woman.jpg
 ---
 
-<h1>helloo</h1>
+<div class="row">
+    <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
+        {% for post in site.posts %}
+          {% if forloop.index == 1 %}
+          <div class="col s10 m6 l8 " ><div class="capsule">
+              <div class="capsule-head" style="height:200px;background:url('images/{{ post.headline }}') no-repeat center ;background-size:cover;">
+                
+              </div>
+              <div class="capsule-content">
+                  <a class="black-text" href="{{ site.baseurl }}{{ post.url }}">
+                  <h4>{{ post.title }}</h4>
+                  <p>lorem ipsum bla bla {{forloop.index}}</p>
+                  </a>
+                  <div class="capsule-footer">
+                        by it's me mario
+                        <span class="right"> {{ post.tag }}</span>
+                    <br>
+                    {{ post.date | date: "%B %e, %Y" }}
+                  </div>
+  
+              </div>
+          </div></div>
+          {% else %}
+            <div class="col s10 m6 l4 " ><div class="capsule">
+                <div class="capsule-head" style="height:200px;background:url('images/{{ post.headline }}') no-repeat center ;background-size:cover ;">
+              
+                </div>
+                <div class="capsule-content">
+                    <a class="black-text" href="{{ site.baseurl }}{{ post.url }}">
+                    <h4>{{ post.title }}</h4>
+                    <p>lorem ipsum bla bla {{forloop.index}}</p>
+                    </a>
+                    <div class="capsule-footer">
+                        by it's me mario
+                        <span class="right"> {{ post.tag }}</span>
+                    <br>
+                    {{ post.date | date: "%B %e, %Y" }}
+                    </div>
+  
+                </div>
+            </div></div>
+            {% endif %}
+          {% endfor %}
+  </div>
+  
+    <div class="col l2 m2   s10">
+      <h5 class="side-title">TAGS</h5>
+        <div class="chip"><a href="#">App</a></div>
+         <div class="chip"><a href="#">Web</a></div>
+    </div>
+    
+   
+    
+  </div>
