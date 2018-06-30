@@ -5,8 +5,6 @@ permalink: tutorial
 headline: blog/woman.jpg
 ---
 
-<div class="row">
-    <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
         {% for post in site.posts %}
           {% if forloop.index == 1 %}
           <div class="col s10 m6 l8 " ><div class="capsule">
@@ -48,14 +46,4 @@ headline: blog/woman.jpg
             </div></div>
             {% endif %}
           {% endfor %}
-  </div>
   
-    <div class="col l2 m2   s10">
-      <h5 class="side-title">TAGS</h5>
-        <div class="chip"><a href="#">App</a></div>
-         <div class="chip"><a href="#">Web</a></div>
-    </div>
-    
-   
-    
-  </div>

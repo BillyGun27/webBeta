@@ -25,4 +25,13 @@ layout: default
   <h2 class="white-text" id="title">{{ page.title }}</h2>
 </div>
 
-  {{ content }}
+<div class="row">
+    <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
+        {{ content }}
+    </div>
+
+    <div class="col l2 m2   s12">
+        {% include sidebar.html %}
+    </div>
+</div>
+  
