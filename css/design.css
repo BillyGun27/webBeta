@@ -98,7 +98,7 @@ nav{
   bottom: 70px;
   left: 16px;
   padding: 10px;
-  background: rgba(184, 0, 0, 0.726);
+  background: rgba(0, 0, 0, 0.726);
 }
 
 #tag{
@@ -106,7 +106,7 @@ nav{
   bottom: 50px;
   left: 16px;
   padding: 10px;
-  background: rgba(184, 0, 0, 0.726);
+  background: rgba(0, 0, 0, 0.726);
 }
 
 /*footer*/

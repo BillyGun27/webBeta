@@ -4,43 +4,22 @@ layout: default
 
 
 <div class="jumbo carousel carousel-slider center " data-indicators="true">
- <!--<div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>-->
-  <a class="carousel-item red white-text" style="background:url('img/poster1.jpg') no-repeat center ; background-size:cover" href="#one!">
-    <h1 id="title">First Panel</h1>
-    <p class="white-text" id="tag">This is your first panel</p>
+  <a class="carousel-item red white-text" style="background:url('images/codex.png') no-repeat center ; background-size:cover" href="#one!">
   </a>
   <a class="carousel-item amber white-text" style="background:url('img/poster2.jpg') no-repeat center ;  background-size:cover" href="#two!">
-      <h1 id="title">First Panel</h1>
+      <h1 id="title">Tutorial</h1>
       <p class="white-text" id="tag">This is your first panel</p>
   </a>
   <a class="carousel-item green white-text" href="#three!">
-      <h1 id="title">First Panel</h1>
+      <h1 id="title">Gallery</h1>
       <p class="white-text" id="tag">This is your first panel</p>
   </a>
   <a class="carousel-item blue white-text" href="#four!">
-      <h1 id="title">First Panel</h1>
+      <h1 id="title">Project</h1>
       <p class="white-text" id="tag">This is your first panel</p>
   </a>
 </div>
 
-<!--
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-
-</div>-->
 <br>
 <div class="row">
   <div class="col l8 m8 s10 offset-s2 offset-l1 offset-m1">
@@ -76,7 +55,7 @@ layout: default
                   </a>
                   <div class="capsule-footer">
                       by it's me mario
-                      <span class="right"> {{ post.tag }}</span>
+                      <span class="right"> <div class="chip"><a href="#">{{ post.tag }}</a></div></span>
                   <br>
                   {{ post.date | date: "%B %e, %Y" }}
                   </div>
